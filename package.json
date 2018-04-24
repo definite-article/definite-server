@@ -1,23 +1,27 @@
 {
-  "name": "typescript-node-scaffold",
+  "name": "definite-server",
   "version": "1.0.0",
-  "description": "Scaffold for a basic node / typescript application",
-  "main": "dist/index.js",
+  "description": "Server for a die-roller app",
+  "main": "dist/server.js",
   "scripts": {
     "test": "gulp maketest && mocha testbuild/*.spec.js && gulp testclean",
     "start": "gulp run"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ericeslinger/nodeScaffold.git"
+    "url": "git+https://github.com/definite-article/definite-server.git"
   },
   "author": "Eric Eslinger",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ericeslinger/nodeScaffold/issues"
+    "url": "https://github.com/definite-article/definite-server/issues"
   },
-  "homepage": "https://github.com/ericeslinger/nodeScaffold#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/definite-article/definite-server#readme",
+  "dependencies": {
+    "hapi": "^17.3.1",
+    "socket.io": "^2.1.0",
+    "ulid": "^2.3.0"
+  },
   "devDependencies": {
     "@types/chai": "^4.1.2",
     "@types/core-js": "^0.9.46",
